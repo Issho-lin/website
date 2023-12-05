@@ -1,0 +1,35 @@
+@import url("https://at.alicdn.com/t/c/font_4349757_dmlv2050ok6.css");
+@import "../styles/variable.scss";
+
+:root {
+  @include light-primary;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-primary;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,26 @@
+@mixin light-primary {
+    --primary-1: 232, 243, 255;
+    --primary-2: 190, 218, 255;
+    --primary-3: 148, 191, 255;
+    --primary-4: 106, 161, 255;
+    --primary-5: 64, 128, 255;
+    --primary-6: 22, 93, 255;
+    --primary-7: 14, 66, 210;
+    --primary-8: 7, 44, 166;
+    --primary-9: 3, 26, 121;
+    --primary-10: 0, 13, 77;
+}
+
+@mixin dark-primary {
+    --primary-1: 232, 243, 255;
+    --primary-2: 190, 218, 255;
+    --primary-3: 148, 191, 255;
+    --primary-4: 106, 161, 255;
+    --primary-5: 64, 128, 255;
+    --primary-6: 22, 93, 255;
+    --primary-7: 14, 66, 210;
+    --primary-8: 7, 44, 166;
+    --primary-9: 3, 26, 121;
+    --primary-10: 0, 13, 77;
+}
+  
