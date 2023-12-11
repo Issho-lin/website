@@ -1,0 +1,39 @@
+.layout {
+    height: 100vh;
+}
+
+.system_logo {
+    height: 56px;
+    padding: 0 12px;
+    // color: var(--color-text-1);
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.system_name {
+    margin-left: 6px;
+}
+
+:global(.ant-layout-sider-collapsed) {
+    .system_logo {
+        padding: 0 22px;
+    }
+    .system_name {
+        display: none;
+    }
+}
+
+.menu {
+    :global {
+        .ant-menu-item {
+            display: flex !important;
+        }
+    }
+}

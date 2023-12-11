@@ -1,6 +1,7 @@
+import React from 'react'
 import cx from 'classnames'
 
-type TP = {
+interface IProps {
   name: string
   size?: number
   className?: string
@@ -9,7 +10,7 @@ type TP = {
   title?: string
 }
 
-const Icon: React.FC<TP> = ({ name, size = 14, onClick, className, color, title }) => {
+const Icon: React.FC<IProps> = React.memo(({ name, size = 14, onClick, className, color, title }) => {
   return (
     <i
       className={cx('iconfont', `icon-${name}`, className)}
@@ -18,5 +19,5 @@ const Icon: React.FC<TP> = ({ name, size = 14, onClick, className, color, title 
       title={title}
     />
   )
-}
+})
 export default Icon
